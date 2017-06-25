@@ -1,0 +1,29 @@
+{
+  "name": "zuse",
+  "version": "1.0.0",
+  "description": "some common tools to encrypt, encode transform etc.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "test": "mocha --opts test/mocha.opts",
+    "watch-test": "mocha -w --opts test/mocha.opts",
+    "run": "ts-node ./src/index.ts",
+    "prepublishOnly": "tsc -p ./ --outDir dist/"
+  },
+  "author": "Sebastian Bejga",
+  "license": "Apache-2.0",
+  "dependencies": {
+  },
+  "engines": {
+    "node": "^7.5.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.0.1",
+    "@types/mocha": "^2.2.41",
+    "@types/node": "^8.0.2",
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2",
+    "ts-node": "^3.1.0",
+    "typescript": "^2.3.4"
+  }
+}
