@@ -1,18 +1,20 @@
 {
   "name": "zuse",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "some common tools to encrypt, encode transform etc.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
+    "clean:dist": "rimraf dist/*",
     "test": "mocha --opts test/mocha.opts",
     "watch-test": "mocha -w --opts test/mocha.opts",
     "run": "ts-node ./src/index.ts",
-    "prepublishOnly": "tsc -p ./ --outDir dist/"
+    "prepublishOnly": "npm run  clean:dist && tsc -p ./ --outDir dist/"
   },
   "author": "Sebastian Bejga",
   "license": "Apache-2.0",
   "dependencies": {
+    "rimraf": "^2.6.1"
   },
   "engines": {
     "node": "^7.5.0"
