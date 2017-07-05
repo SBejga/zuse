@@ -4,18 +4,25 @@ some common tools to work with encode, encrypt, transform, calculate, work with 
 
 ## features
 
+### alphabet position
+
+get character position of each char in a string. 
+
+    "Apple" => '1 16 16 12 5'
+
 ### buchstabenwortwert (bww)
 
-character position in alphabet, in german "buchstabenwortwert" or short "BWW".
-Replace a characters position in alphabet and sum of each char in a word.
+get sum of each characters position (in alphabet) in a string. In german also called "buchstabenwortwert" or short "BWW".
+
+    "Apple" => 50
 
 ### QS, EQS
 
-digit sum (de: qs)
+digit sum (in german: Quersumme or short 'QS')
 
     1989 => 27
 
-iterated digit sum (de: eqs)
+iterated digit sum (in German: Einstellige Quersumme or short 'EQS')
 
     1989 => 27 => 9
     2989 => 28 => 10 => 1
